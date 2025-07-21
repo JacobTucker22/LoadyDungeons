@@ -1,3 +1,5 @@
+This project was downloaded for the Unity addressables tutorial project. Below is the readmen from the root learning project.
+
 ![LD](https://user-images.githubusercontent.com/263776/110165036-dde21300-7db7-11eb-8f49-e7745ed44b35.png)
 
 # Loady Dungeons
