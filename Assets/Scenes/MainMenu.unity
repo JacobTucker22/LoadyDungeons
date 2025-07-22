@@ -163,7 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5f80bf31c15db4d8992ac31648a0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LogoAddress: LoadyDungeonsLogo
+  m_LogoAssetReference:
+    m_AssetGUID: c3a9b5d611a35464a8e473e4249a1df9
+    m_SubObjectName: LoadyDungeonsLogo
+    m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   m_gameLogoImage: {fileID: 1402112333}
 --- !u!1 &454594787
 GameObject:
