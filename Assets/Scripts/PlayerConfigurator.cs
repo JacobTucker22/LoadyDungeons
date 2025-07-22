@@ -9,9 +9,8 @@ public class PlayerConfigurator : MonoBehaviour
     private Transform m_HatAnchor;
 
     [SerializeField]
-    private string m_Address;
+    private AssetReferenceGameObject m_HatAssetReference;
 
-    private ResourceRequest m_HatLoadingRequest;
     private AsyncOperationHandle<GameObject> m_HatLoadOpHandle;
 
 
@@ -23,7 +22,11 @@ public class PlayerConfigurator : MonoBehaviour
 
     public void SetHat(string hatKey)
     {
-        m_HatLoadOpHandle = Addressables.LoadAssetAsync<GameObject>(m_Address);
+        if (!m_HatAssetReference.RuntimeKeyIsValid())
+        {
+            return;
+        }
+        m_HatLoadOpHandle = Addressables.LoadAssetAsync<GameObject>(m_HatAssetReference);
         m_HatLoadOpHandle.Completed += OnHatLoadComplete;
     }
 
